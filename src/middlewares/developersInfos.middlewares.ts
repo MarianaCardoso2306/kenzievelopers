@@ -40,7 +40,6 @@ const ensurepreferedOSisCorrectMiddleware = async (
   next: NextFunction
 ): Promise<Response | void> => {
   const preferredOS = req.body.preferredOS;
-  console.log(preferredOS);
 
   if (!["Windows", "Linux", "MacOS"].includes(preferredOS)) {
     return res.status(400).json({

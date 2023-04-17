@@ -84,7 +84,6 @@ const deleteTechFromProject = async (
   };
 
   const queryResult: QueryResult = await client.query(queryConfig);
-  console.log(queryResult);
   return res.status(204).send();
 };
 
